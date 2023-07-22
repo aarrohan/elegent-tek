@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Images/Symbols/logo-symbol.png"
+      type="image/x-icon"
+    />
+    <title>Careers - Elegant Tek</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/careers.css" />
+  </head>
+  <body>
+    <div class="social-media-header">
+      <div class="contact">
+        <div class="phone">
+          <i class="fa-sharp fa-solid fa-phone"></i>
+          <span>Phone: +1-608-285-2631</span>
+        </div>
+
+        <div class="mail">
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          <span>Email: contact@eleganttek.com</span>
+        </div>
+      </div>
+
+      <div class="social-media-links">
+        <a
+          href="https://www.facebook.com/profile.php?id=100092390304118"
+          class="social-media-link"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/elegant-tek/"
+          class="social-media-link"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tooltip">
+        <!-- Show a message not delivered -->
+        <p>Message delivered!</p>
+        <button class="btn btn-close-tooltip">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <!-- Section 1 -->
+      <section class="section-1">
+        <a href="/" class="btn btn-prev">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="section-1-heading-wrapper section-heading-wrapper">
+          <div class="heading">
+            <h1>career with us</h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="para">
+            <p>
+              Are you passionate about technology and looking for a career that
+              challenges and inspires you?
+            </p>
+          </div>
+        </div>
+        <div class="swiper mainSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+              <img src="/Images/Assets/Career/header_1.jpg" />
+            </div>
+
+            <div class="swiper-slide slide-2">
+              <img src="/Images/Assets/Career/header_2.jpg" />
+            </div>
+
+            <div class="swiper-slide slide-3">
+              <img src="/Images/Assets/Career/header_3.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 1 -->
+      <!-- Section 2 -->
+      <section class="section-2">
+        <p class="pre-text">
+          We appreciate your interest in joining our team! While we currently
+          don't have any active job openings, we encourage you to check back in
+          the future as we frequently update our careers page with new
+          opportunities. We are always on the lookout for talented individuals
+          who are passionate about what they do. In the meantime, feel free to
+          explore the other sections of our website to learn more about our
+          company and culture. Thank you for considering us as a potential
+          employer, and we look forward to connecting with you in the future.
+        </p>
+        <a href="/" class="btn btn-light">back to homepage</a>
+        <div class="job-cards">
+          <% for(let job of fakeJobsJSON) { %>
+          <div
+            class="job-card"
+            id="<%= job.jobID %>"
+            job-title="<%= job.jobTitle %>"
+            job-location="<%= job.jobLocation %>"
+            job-type="<%= job.jobType %>"
+          >
+            <div class="role">
+              <p>
+                <span class="position-number"><%= job.jobID %></span
+                ><span class="location"><%= job.jobLocation %></span>
+              </p>
+              <h3 class="job-title"><%= job.jobTitle %></h3>
+            </div>
+
+            <a href="/careers/<%= job.jobID %>" class="btn btn-dark btn-details"
+              >see details</a
+            >
+          </div>
+          <% } %>
+        </div>
+      </section>
+      <!-- End of Section 2 -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p class="copyright">
+          Copyright © 2023 Elegant Tek LLC. All Rights Reserved
+        </p>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"
+      integrity="sha512-+z66PuMP/eeemN2MgRhPvI3G15FOBbsp5NcCJBojg6dZBEFL0Zoi0PEGkhjubEcQF7N1EpTX15LZvfuw+Ej95Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

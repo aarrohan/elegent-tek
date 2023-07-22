@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Images/Symbols/logo-symbol.png"
+      type="image/x-icon"
+    />
+    <title><%= job.jobTitle %> - Elegant Tek</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/careers.css" />
+  </head>
+  <body>
+    <div class="social-media-header">
+      <div class="contact">
+        <div class="phone">
+          <i class="fa-sharp fa-solid fa-phone"></i>
+          <span>Phone: +1-608-285-2631</span>
+        </div>
+
+        <div class="mail">
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          <span>Email: contact@eleganttek.com</span>
+        </div>
+      </div>
+
+      <div class="social-media-links">
+        <a
+          href="https://www.facebook.com/profile.php?id=100092390304118"
+          class="social-media-link"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/elegant-tek/"
+          class="social-media-link"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="dark-cover"></div>
+      <!-- Section 1 -->
+      <section class="section-1">
+        <a href="/careers" class="btn btn-prev">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="section-1-heading-wrapper section-heading-wrapper">
+          <div class="heading">
+            <h1>join our team</h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="para">
+            <p>
+              Join our team at Elegant Tek and be part of a dynamic IT
+              consultancy that thrives on innovation.
+            </p>
+          </div>
+        </div>
+        <div class="swiper mainSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+              <img src="/Images/Assets/Career/header_job_1.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 1 -->
+
+      <!-- Section 2 -->
+      <section class="section-2">
+        <div class="job-details">
+          <div>
+            <p>job title</p>
+            <h3><%= job.jobTitle %></h3>
+          </div>
+
+          <div>
+            <p>job position</p>
+            <h3><%= job.jobID %></h3>
+          </div>
+
+          <div>
+            <p>job location</p>
+            <h3><%= job.jobLocation %></h3>
+          </div>
+
+          <div class="job-roles">
+            <p>job roles & responsibilities</p>
+            <ul>
+              <% for(let role of job.jobRoles) { %>
+              <li><%= role %></li>
+              <% } %>
+            </ul>
+          </div>
+
+          <div class="job-qualifications">
+            <p>job qualifications</p>
+            <ul>
+              <% for(let qualification of job.jobQualifications) { %>
+              <li><%= qualification %></li>
+              <% } %>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-dark btn-apply">apply</button>
+      </section>
+      <!-- End of Section 2 -->
+
+      <!-- Apply Form -->
+      <div class="apply-form">
+        <div class="form-alt">
+          <h4>ELEGANT TEK LLC. PARTICIPATES IN E-VERIFY</h4>
+
+          <img src="/Images/Symbols/E-Verify.svg" alt="E-Verify" />
+
+          <p>
+            Elegant Tek will provide the Social Security Administration (SSA)
+            and, if necessary, the Department of Homeland Security (DHS), with
+            information from each new employee’s Form I-9 to confirm work
+            authorization.
+          </p>
+        </div>
+
+        <form
+          action="/careers/<%= job.jobID %>/upload"
+          class="form-main"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h3>job application</h3>
+          <div class="form-control">
+            <label for="role">job role</label>
+            <input
+              type="text"
+              id="role"
+              name="role"
+              value="<%= job.jobTitle %>"
+              readonly
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="name">applicant's name</label>
+            <input
+              type="name"
+              id="name"
+              class="input"
+              name="name"
+              placeholder="full name"
+              required
+            />
+            <div class="feedback">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>This is the feedback for name!</span>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="email">applicant's email address</label>
+            <input
+              type="email"
+              id="email"
+              class="input"
+              name="email"
+              placeholder="email address"
+              required
+            />
+            <div class="feedback">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>This is the feedback for email!</span>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="contact">applicant's contact number</label>
+            <input
+              type="text"
+              id="contact"
+              class="input"
+              name="contact"
+              placeholder="contact number"
+              required
+            />
+            <div class="feedback">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Please enter a valid number!</span>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="resume">upload resume</label>
+            <input
+              type="file"
+              id="resume"
+              class="input"
+              name="resume"
+              required
+            />
+          </div>
+
+          <div class="consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent"
+              >I hereby provide my informed consent to Elegant Tek for the
+              collection, use, and processing of my personal data as outlined in
+              this declaration.</label
+            >
+          </div>
+
+          <div class="form-btns">
+            <button type="button" class="btn btn-light btn-cancel">
+              cancel
+            </button>
+            <button type="submit" class="btn btn-dark btn-submit">
+              submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- End of Apply Form -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p class="copyright">
+          Copyright © 2023 Elegant Tek LLC. All Rights Reserved
+        </p>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"
+      integrity="sha512-+z66PuMP/eeemN2MgRhPvI3G15FOBbsp5NcCJBojg6dZBEFL0Zoi0PEGkhjubEcQF7N1EpTX15LZvfuw+Ej95Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+    <script src="/JS/job.js"></script>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

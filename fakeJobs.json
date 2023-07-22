@@ -1,0 +1,120 @@
+[
+  {
+    "jobTitle": "Front-End Developer",
+    "jobID": 18564,
+    "jobLocation": "New York",
+    "jobType": "Full-Time",
+    "jobRoles": [
+      "Develop new user-facing features",
+      "Build reusable code and libraries for future use",
+      "Ensure the technical feasibility of UI/UX designs",
+      "Optimize application for maximum speed and scalability",
+      "Assure that all user input is validated before submitting to back-end",
+      "Collaborate with other team members and stakeholders",
+      "Proficient understanding of web markup, including HTML5, CSS3",
+      "Basic understanding of server-side CSS pre-processing platforms, such as LESS and SASS",
+      "Proficient understanding of client-side scripting and JavaScript frameworks, including jQuery",
+      "Good understanding of asynchronous request handling, partial page updates, and AJAX"
+    ],
+    "jobQualifications": [
+      "Bachelor's degree in Computer Science or related field",
+      "At least 2 years of experience in the field or in a related area",
+      "Strong programming skills in Java, Python, or other relevant languages",
+      "Experience with Agile methodologies and software development lifecycle"
+    ]
+  },
+  {
+    "jobTitle": "Back-End Developer",
+    "jobID": 48801,
+    "jobLocation": "Jersey City",
+    "jobType": "Full-Time",
+    "jobRoles": [
+      "Designing, developing, testing, and maintaining server-side applications and software systems",
+      "Ensuring the performance, scalability, and security of server-side applications and databases",
+      "Working with databases such as MySQL, PostgreSQL, or MongoDB to manage data storage and retrieval",
+      "Troubleshooting and resolving issues related to server-side applications and databases",
+      "Documenting technical specifications, code changes, and other relevant information for server-side applications and APIs"
+    ],
+    "jobQualifications": [
+      "A bachelor's degree in computer science, software engineering, or a related field is often preferred.",
+      "Proficiency in one or more server-side programming languages such as Java, Python, Ruby, or Node.js is usually required. Knowledge of other languages such as C++, C#, or PHP may also be beneficial.",
+      "Experience with database management systems such as MySQL, PostgreSQL, or MongoDB is often required.",
+      "Experience with cloud services such as AWS, Azure, or Google Cloud Platform is often required.",
+      "Backend developers should be able to identify and troubleshoot technical issues, as well as develop and implement effective solutions.",
+      "Good communication skills are important for collaborating with other developers, stakeholders, and clients."
+    ]
+  },
+  {
+    "jobTitle": "Data Analyst",
+    "jobID": 30078,
+    "jobLocation": "San Francisco",
+    "jobType": "Part-Time",
+    "jobRoles": [
+      "Collecting, cleaning, organizing, and maintaining data from various sources to ensure its accuracy and reliability.",
+      "Creating regular reports and presentations to summarize key findings and recommendations for business stakeholders.",
+      "Developing and implementing data quality standards, procedures, and tools to ensure the accuracy, completeness, and consistency of data.",
+      "Identifying and troubleshooting data-related problems and recommending effective solutions.",
+      "Working with stakeholders to identify opportunities for leveraging company data to drive business solutions.",
+      "Conducting research and performing statistical analysis to identify trends, patterns, and insights in data sets.",
+      "Developing and implementing data analyses, data collection systems, and other strategies that optimize statistical efficiency and quality."
+    ],
+    "jobQualifications": [
+      "A bachelor's degree in computer science, statistics, mathematics, or a related field is often required.",
+      "A strong background in quantitative analysis, including proficiency in statistics and data modeling, is usually required. Knowledge of programming languages such as SQL, Python, or R is also important.",
+      "Experience with data visualization tools and techniques, such as Tableau, Power BI, or QlikView, is usually required. Knowledge of web development principles such as HTML, CSS, and JavaScript may also be beneficial.",
+      "Good communication skills are important for collaborating with other analysts and stakeholders, as well as for presenting findings and recommendations to senior management.",
+      "A strong understanding of business principles and industry trends is important for identifying opportunities and developing data-driven solutions to business problems."
+    ]
+  },
+  {
+    "jobTitle": "Software Engineer",
+    "jobID": 42765,
+    "jobLocation": "San Jose",
+    "jobType": "Internship",
+    "jobRoles": [
+      "Designing, developing, testing, and maintaining software applications and systems.",
+      "Working with other developers and stakeholders to ensure technical compatibility and user satisfaction.",
+      "Gathering and analyzing user feedback to improve software performance.",
+      "Documenting software specifications and training users.",
+      "Writing and maintaining technical documentation to describe program development, logic, coding, testing, changes, and corrections.",
+      "Collaborating with business analysts and developers to produce software designs.",
+      "Identifying and troubleshooting software defects.",
+      "Developing and directing software system testing and validation procedures.",
+      "Directing software programming and documentation development."
+    ],
+    "jobQualifications": [
+      "A bachelor's degree in computer science, software engineering, or a related field is often required.",
+      "Proficiency in one or more programming languages such as Java, Python, C++, or JavaScript is usually required. Knowledge of other languages such as C#, PHP, or Ruby may also be beneficial.",
+      "Experience with database management systems such as MySQL, PostgreSQL, or MongoDB is often required.",
+      "Experience with cloud services such as AWS, Azure, or Google Cloud Platform is often required.",
+      "Software engineers should be able to identify and troubleshoot technical issues, as well as develop and implement effective solutions.",
+      "Good communication skills are important for collaborating with other developers, stakeholders, and clients."
+    ]
+  },
+  {
+    "jobTitle": "Product Manager",
+    "jobID": 31794,
+    "jobLocation": "San Francisco",
+    "jobType": "Full-Time",
+    "jobRoles": [
+      "Developing and implementing product strategies consistent with company vision.",
+      "Collecting and analyzing feedback from customers, stakeholders, and other teams to shape requirements, features, and end products.",
+      "Working with senior management to create product plans and roadmaps.",
+      "Leading product managers and coordinating cross-functional teams.",
+      "Producing and reviewing product requirements documents (PRD).",
+      "Ensuring products and releases are launched correctly and on schedule.",
+      "Making creative recommendations to expand product base and vision.",
+      "Suggesting ways to track product use and impact on end users.",
+      "Researching and analyzing market trends.",
+      "Evaluating competition."
+    ],
+    "jobQualifications": [
+      "A bachelor's degree in computer science, software engineering, or a related field is often required.",
+      "Proficiency in one or more programming languages such as Java, Python, C++, or JavaScript is usually required. Knowledge of other languages such as C#, PHP, or Ruby may also be beneficial.",
+      "Experience with database management systems such as MySQL, PostgreSQL, or MongoDB is often required.",
+      "Experience with cloud services such as AWS, Azure, or Google Cloud Platform is often required.",
+      "Software engineers should be able to identify and troubleshoot technical issues, as well as develop and implement effective solutions.",
+      "Good communication skills are important for collaborating with other developers, stakeholders, and clients."
+    ]
+  }
+]
